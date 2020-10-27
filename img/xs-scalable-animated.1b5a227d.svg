@@ -18,28 +18,36 @@
 
             #line-left {
                 /**transform-origin:bottom;**/
-                animation: 2s show-left linear forwards;
+                transform: scale(0,0);
+                animation: 1.5s show-left linear 0.25s forwards;
             }
 
             #line-top {
                 /**transform-origin:left;**/
-                animation: 2s show-top linear forwards;
+                transform: scale(0,0);
+                animation: 1.5s show-top linear 0.25s forwards;
             }
 
             #line-right {
                 /**transform-origin:top;**/
-                animation: 2s show-right linear forwards;
+                transform: scale(0,0);
+                animation: 1.5s show-right linear 0.25s forwards;
             }
 
             #line-bottom {
                 /**transform-origin:right;**/
-                animation: 2s show-bottom linear forwards;
+                transform: scale(0,0);
+                animation: 1.5s show-bottom linear 0.25s forwards;
             }
 
             @keyframes show-left {
                 0% {
                     /**transform: translate(0px, 500px); **/
                     transform: scale(1,0);
+                    opacity:0.5;
+                }
+                30% {
+                    opacity:1;
                 }
                 100% {
                     /**transform: translate(0px, 0px); **/
@@ -51,6 +59,10 @@
                 0% {
                     /**transform: translate(-500px, 0px); **/
                     transform: scale(0,1);
+                    opacity:0.5;
+                }
+                30% {
+                    opacity:1;
                 }
                 100% {
                     /**transform: translate(0px, 0px); **/
@@ -62,6 +74,10 @@
                 0% {
                 /**transform: translate(0px, -500px); **/
                 transform: scale(1,0);
+                opacity:0.5;
+                }
+                30% {
+                    opacity:1;
                 }
                 100% {
                     /**transform: translate(0px, 0px); **/
@@ -73,6 +89,10 @@
                 0% {
                 /**transform: translate(500px, 0px); **/
                 transform: scale(0,1);
+                opacity:0.5;
+                }
+                30% {
+                    opacity:1;
                 }
                 100% {
                     /**transform: translate(0px, 0px); **/
